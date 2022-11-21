@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+h1{
+    margin: 50px 0 30px;
+}
+.info{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.info-1,.info-2,.info-3{
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.info-1 span,.info-2 span,.info-3 span{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.faq-text-2{
+    display: none;
+}
+.faq-text{
+    display: none;
+}
+
+.info-1.active,.info-3.active{
+    background-color: white;
+}
+
+.info-1.active .faq-text,.info-3.active.faq-text-2{
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+}
+.a-center{
+    align-items: center;
+}
+
+.j-between{
+    justify-content: space-between;
+}
+
+.list-icon,.list-icon-2{
+ cursor: pointer;
+}
+
+.info-1 .list-icon .icon-down,.info-3.list-icon-2.icon-down{
+    display: block;
+}
+
+.info-1 .list-icon .icon-close,.info-3.list-icon-2.icon-close{
+    display: none;
+}
+
+.info-1.active .list-icon .icon-down,.info-3.active .list-icon-2 .icon-down{
+    display: none;
+}
+
+.info-1.active .list-icon .icon-close,.info-3.active .list-icon-2 .icon-close{
+    display: block;
+}
+.info-2 .list-icon-1 .icon-down{
+       display: block;
+   }
+.info-2 .list-icon-1 .icon-close{
+       display: none;
+   }
+.info-2.active .list-icon-1 .icon-down{
+       display: none;
+   }
+.info-2.active .list-icon-1 .icon-close{
+       display: block;
+   }
+   .faq-text-1,.faq-text-2{
+    display: none;
+}
+.info-2.active{
+    background-color: white;
+}
+.info-2.active .faq-text-1{
+    display: block;
+}
